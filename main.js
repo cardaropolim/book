@@ -1,3 +1,4 @@
+// Menu Hamburger
 const menuHamburger = document.querySelector(".menu-hamburger");
 const navLinks = document.querySelector(".nav-links");
 
@@ -14,7 +15,6 @@ window.addEventListener('resize', () => {
 });
 
 // 
-
 let sections = document.querySelectorAll('section');
 
 document.getElementById('next').onclick = function(){
@@ -27,9 +27,36 @@ document.getElementById('prev').onclick = function(){
 }
 
 
+
+// scrolltop js 
+// execute la fonction lorsque la fenêtre est scrollée
+window.onscroll = function () { scrollFunction() };
+
+// lorsque user scroll down à 30px du haut de la page, montre le bouton
+function scrollFunction() { 
+// récupère le bouton
+var mybutton = document.getElementById("scrollToTopButton");
+
+if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.opacity = 1;
+    mybutton.style.visibility = "visible";
+    
+} else {
+    mybutton.style.opacity = 0;
+    mybutton.style.visibility = "hidden";
+    
+}
+}
+
+// lorsque user click sur le bouton, scroll to the top
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0
+}
+
+
 // fonction lightbox
 lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
   })
-  

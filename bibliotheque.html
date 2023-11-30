@@ -7,10 +7,27 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"> -->
     <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <script src="lightbox-plus-jquery.min.js"></script>
 </head>
 <body>
+
+    <nav class="navbar">
+        <a href="logo" class="logo"><img src="images/Logo MC.png" alt="logo" width="115px" height="115px"></a>
+          <div class="nav-links">
+            <ul>
+                <li><a href="index.html" style="text-decoration:none">Accueil</a></li>
+                <li><a href="index.html#Biographie" style="text-decoration:none">Biographie</a></li>
+              <li><a href="index.html#Échantillon" style="text-decoration:none">Échantillon</a></li>
+              <li><a href="bibliotheque.html" style="text-decoration:none">Bibliothèque</a></li>
+              <li><a href="index.html#Contact" style="text-decoration:none">Contact</a></li>
+            </ul>
+          </div>
+          <img src="images/menu-btn.svg.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+
+
     <div id="albums">
         <a href="francisco.html"><img src="images/FR1.jpg" alt="Album Francisco Muñoz Berrios"></a>
         <a href="kevin.html"><img src="images/K1.JPG" alt="Album Kev Photos"></a>
@@ -22,6 +39,8 @@
         <a href="semfronteiras.html"><img src="images/S2.jpg" alt="Album Sem Fronteiras"></a>
         <a href="gaetan.html"><img src="images/G1.png" alt="Album Gaëtan Dubroca"></a>
     </div>
+
+    <button onclick="topFunction()" id="scrollToTopButton" title="Haut de page"><i class="fas fa-chevron-up"></i></button>
     
     <script src="lightbox.js"></script>        
 </body>

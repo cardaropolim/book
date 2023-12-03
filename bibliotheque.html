@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portolio Mathieu CARDAROPOLI">
+    <meta name="robots" content="follow">
     <title>Bibliothèque</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"> -->
     <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
@@ -13,22 +14,24 @@
 </head>
 <body>
 
+ <!-- Navbar -->
     <nav class="navbar">
-        <a href="logo" class="logo"><img src="images/Logo MC.png" alt="logo" width="115px" height="115px"></a>
-          <div class="nav-links">
+        <a href="index.html" class="logo"><img src="images/LogoMC.png" alt="logo"></a>
+        <div class="nav-links">
             <ul>
                 <li><a href="index.html" style="text-decoration:none">Accueil</a></li>
                 <li><a href="index.html#Biographie" style="text-decoration:none">Biographie</a></li>
-              <li><a href="index.html#Échantillon" style="text-decoration:none">Échantillon</a></li>
-              <li><a href="bibliotheque.html" style="text-decoration:none">Bibliothèque</a></li>
-              <li><a href="index.html#Contact" style="text-decoration:none">Contact</a></li>
+                <li><a href="index.html#Échantillon" style="text-decoration:none">Échantillon</a></li>
+                <li><a href="bibliotheque.html" style="text-decoration:none">Bibliothèque</a></li>
+                <li><a href="index.html#Contact" style="text-decoration:none">Contact</a></li>
             </ul>
-          </div>
+        </div>
           <img src="images/menu-btn.svg.png" alt="menu hamburger" class="menu-hamburger">
         </nav>
 
-
+ <!-- Lightbox -->
     <div id="albums">
+        <h1>Portfolio Mathieu CARDAROPOLI</h1>
         <a href="francisco.html"><img src="images/FR1.jpg" alt="Album Francisco Muñoz Berrios"></a>
         <a href="kevin.html"><img src="images/K1.JPG" alt="Album Kev Photos"></a>
         <a href="raphaelrk.html"><img src="images/RA2.jpg" alt="Album Raphaël R.K"></a>
@@ -40,6 +43,7 @@
         <a href="gaetan.html"><img src="images/G1.png" alt="Album Gaëtan Dubroca"></a>
     </div>
 
+ <!-- Boutons lightbox -->
     <button onclick="topFunction()" id="scrollToTopButton" title="Haut de page"><i class="fas fa-chevron-up"></i></button>
     
     <script src="lightbox.js"></script>        

@@ -14,7 +14,13 @@ window.addEventListener('resize', () => {
     }
 });
 
-// 
+// fonction lightbox
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+  })
+
+// boutons next et previous du slider lightbox 
 let sections = document.querySelectorAll('section');
 
 document.getElementById('next').onclick = function(){
@@ -53,10 +59,3 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0
 }
-
-
-// fonction lightbox
-lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true
-  })
